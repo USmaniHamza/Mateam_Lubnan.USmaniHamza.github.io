@@ -3,6 +3,13 @@ margin:0px auto;
 padding: 0px auto;
 
 }
+.stylizebutton{
+	position: static;
+	top: 40%;
+	bottom: 10%;
+	  transform: translate(0%, 60%);
+	  
+}
 .body{
 	padding:50px 0px 0px 0px;
 	z-index: 0;
@@ -35,6 +42,13 @@ padding:20px 0px 20px 0px;
 
 }
 
+.badges{
+
+ position: static;
+
+  margin:0px auto;
+}
+
 .jumbotron{
 padding-top:  100px ;
 padding-right:30px;
@@ -47,7 +61,8 @@ color: floralwhite;
 .address{
 font-size: 80%;
 margin: 0px;
-colour:#0f0f0f;
+color:#0f0f0f;
 
 }
+
 

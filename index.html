@@ -17,8 +17,29 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
     
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+    $('a[href*=\\#]:not([href=\\#])').on('click', function(){
 
 
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+        if (target.length) {
+        $('html,body').animate ({
+            scrollTop: target.offset().top
+        }, 1000);
+            return false;
+        }
+    });
+
+});
+
+
+   
+
+</script>
 
 
     <title>Ristorante Con Fusion</title>
@@ -56,15 +77,32 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante Hawaii</h1>
-                    <h4>by Jason Momoa</h4>
+                <div class="col-md-6 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center">
-                    <img src="img/Jason.jpg"  class="img-fluid" height="250" width="230">
+            
+                <div class="col-md-3 col-sm-6 align-self-center">
+                    <img src="img/logo.png"  class="img-fluid" height="230" width="210">
+                    
                 </div>
-            </div>
+
+                 <div class="col-md col-sm-12 btn-group stylizebutton"  role="group">
+                                        
+                                                                                           
+                        
+                                  <a href="#innerdiv" class="btn btn-warning btn-md  active" role="button" aria-pressed="true" style="height: 40px; width:200px; color:#0f0f0f;" > Reserve a Table</a>
+                                        
+                                   
+           
+                <!--   <button type="button" class="btn bg-warning col-md-6" style="height: 40px" 
+                         id="iddiv" onclick="myFunction()" >
+                                Reserve Table                    
+                           </button>   -->
+                  </div>
+                
+            
         </div>
     </header>
 <!-- Image add korlam -->
@@ -79,38 +117,54 @@
                   <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthapizza">
                   <div class="media-body">
                          <h2 class="mt-0">Pepperoni pizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$5.00</span></h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                       <div class="d-none d-sm-block"><p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p> </div>
                   </div>
                 </div>
              <!-- thumbnail add korlam --> <!-- purpose of d-flex and align-self-center bujhi nai-->
             </div>
         </div>
 
-
+<!-- buffet -->
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-6 ">
+            <div class="col-12 col-sm-4  col-md-3 order-sm-first">
                 <h3>This Month's Promotions </h3>
             </div>
-            <div class="col-12 col-sm-6">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <!-- image of buffet -->
+            <div class="col  order-sm-last col-md ">
+                <div class="media ">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center order-md-last order-sm-last "
+                     src="img/buffet.png" height="100" width="100"  >
+                    
+
+                                        <!-- image of buffet -->
+                <div class="media-body">
+                    
+                    <h2 class="mt-0 order-md-first ">Weekend Grand Buffet<span class="badge badges badge-danger m-2  ">NEW</span></h2> 
+                    
+                <!-- the badge has been shift a little right by the m thingy -->
+                  <div class="d-none d-sm-block">  <p>Featuring mouthwatering  combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                   </div>
+                  
+                </div>
+                </div>
             </div>
         </div>
-      
+<!-- buffet -->
+    
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-12 order-sm-last col-md ">
+            <div class="col-12 col-sm-12 order-sm-last col-md-2 ">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
            <!-- images as thumbnail ei media taake top bottom left right kora jay -->
             <div class="col-12 col-sm order-sm-first col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                     src="img/Hamza.png" height="150" width="130" alt="Hamza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"  
+                     src="img/alberto.png" height="150" width="130" alt="Hamza">
                     <div class="media-body">
                         
-                        <h2 class="mt-0">Abdul Momen Usmani</h2>
+                        <h2 class="mt-0">Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="d-none d-sm-block">  <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p> </div>
 
                     </div>
                 </div>
@@ -119,14 +173,16 @@
             <!-- images as thumbnail ei media taake top bottom left right kora jay -->
         </div>
         <!--  Assignment 1 task 1  --> <!-- row choto kora baaki -->
-        <div class=" col-sm-12 row-content  col-md-6 ">
+        
+        <div class=" col-sm-12 row-content  col-md-6 " id="mydiv">
                 <div class="card"> <!-- card start -->
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                     <div class="card-body container">
                         <!-- ROW kora shundor moto -->
+                        <form>
                         <dl class="row">
                             <dt class="col-md-4 ">Number of Guests</dt> <!-- data title -->
-                                    <div class="col-md-7 col-sm-12 ">
+                                    <div class="col-md-7 col-sm-12 " id="innerdiv">
                                                   <label class="radio-inline">
                                                     <input type="radio" name="optradio"> 1
                                                   </label>
@@ -148,6 +204,7 @@
                                     </div>
                             
                         </dl> <!-- ek dl shesh hoilo -->
+</form>
                         <dl class="row">
                             <dt class="col-md-4 ">Date and Time</dt>
                                     <div class="col-md-7 col-sm-12">
@@ -158,7 +215,7 @@
                                                  <input type="text" class="form-control col-form-label" id="date" name="date" placeholder="Date">
                                                  </div> 
                                                  <div class="col-md-6">
-                                                 <input type="text" class="form-control col-form-label" id="date" name="date" placeholder="Date">
+                                                 <input type="text" class="form-control col-form-label" id="Time" name="Time" placeholder="Time">
                                                  </div> 
                                                            
 
@@ -167,14 +224,36 @@
                                         </form>
 
                                     </div>
+                        </dl><!-- ek dl shesh hoilo -->
+                         <!-- button --> <!-- task 3 -->
+                        <!-- the button is done here -->
+                        <dl class="row"> <!-- this is a fake dl for the space -->
+                              <dt class="col-md-4 "></dt>
+                                    <div class="col-md-7 col-sm-12 btn-group col-md-6 " role="group">
+                                        
+                                                                                           
+                                              <button type="submit" class="btn btn-primary" >
+                                                    Reserve
+                                              </button>            
+                                        
+                                    </div>
 
                         </dl>
+                        <!-- the button is done here -->
+                              
+
+
+                      
+                       
+                         
+                         
+
                         <!-- ROW kora shundor moto -->
                     </div>
                 </div>
         </div>
         <!--  Assignment 1 task 1  -->  <!-- row choto kora baaki -->
-
+        
 
 
 
