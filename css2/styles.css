@@ -1,5 +1,5 @@
 .jumbotron{
-padding-top:  70px ;
+padding-top:  100px ;
 padding-right:30px;
 padding-bottom:70px;
 padding-left:  30px;
@@ -64,4 +64,8 @@ border-bottom: 1px ridge;
 min-height: 400px;
 
 }
+.row-header{
+margin:0px auto;
+padding: 0px auto;
 
+}
