@@ -129,8 +129,6 @@ $(function(){
     <!-- MODAL FULL 2-->
 
 
-
-
         <div id="ReserveModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                       <!-- MODAL-BODY -->
@@ -315,6 +313,14 @@ $(function(){
                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                        <span class="carousel-control-next-icon"></span>
                    </a>
+                   <div class="btn-group" id="carouselButton">  <!-- but left er theke kemnse shuru holo -->
+                       <button class="btn btn-danger btn-sm" id="carousel-pause">
+                           <span class="fa fa-pause"></span>
+                       </button>
+                       <button class="btn btn-danger btn-sm" id="carousel-play">
+                           <span class="fa fa-play"></span>
+                       </button>
+                   </div>
                </div>
            </div>
 
@@ -440,6 +446,25 @@ $(function(){
     <script type="text/javascript">
         $(document).ready(function(){
 $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#mycarousel').carousel({ interval:2000});//2000ms or 2seconds so we are making it a bit faster for the sliding action to take place
+            $('#carousel-pause').click(function(){
+               //over here we write what we want to do 
+            $('#mycarousel').carousel('pause');  // #mycarousel ke tag dise jate pura process tai eii function er kotha mane
+            }); //for the pause button if a click action is done by the user, then execute this particular function
+            $('#carousel-play').click(function(){
+               //over here we write what we want to do 
+            $('#mycarousel').carousel('cycle');  // #mycarousel ke tag dise jate pura process tai eii function er kotha mane
+            //we want the sliding action to resume
+
+            });
+ 
+
         });
     </script>
 
