@@ -23,8 +23,6 @@
 <script>
 $(function(){
     $('a[href*=\\#]:not([href=\\#])').on('click', function(){
-
-
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
         if (target.length) {
@@ -51,10 +49,10 @@ $(function(){
  <nav class="navbar navbar-dark navbar-dark navbar-expand-sm  fixed-top">
         <div class="container">
 
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"> 
                 <span class="navbar-toggler-icon"></span>
                  
-             </button>
+        </button>
 
 <!-- Image add korlam --><!-- Image add korlam -->
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"> </a>

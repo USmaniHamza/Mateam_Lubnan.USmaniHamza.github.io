@@ -1,0 +1,98 @@
+.row-header{
+margin:0px auto;
+padding: 0px auto;
+
+}
+.stylizebutton{
+	position: static;
+	top: 40%;
+	bottom: 10%;
+	  transform: translate(0%, 60%);
+	  
+}
+.body{
+	padding:50px 0px 0px 0px;
+	z-index: 0;
+}
+.navbar-dark{
+	background-color: #4B0082;
+}
+.History{
+padding-top: 50px;
+padding-left:  30px;
+margin: 0px ;
+}
+
+.modalform{
+
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.Corporate{
+padding-top: 90px;
+padding-left:  30px;
+margin: 0px ;
+}
+.row-content{
+margin:0px auto;
+padding:50px 0px 50px 0px;
+border-bottom: 1px ridge;
+min-height: 400px;
+
+}
+
+.footer{
+background-color: #D1C4E8;
+margin:0px auto;
+padding:20px 0px 20px 0px;
+
+}
+
+.badges{
+
+ position: static;
+
+  margin:0px auto;
+}
+
+.jumbotron{
+padding-top:  100px ;
+padding-right:30px;
+padding-bottom:70px;
+padding-left:  30px;
+margin:0px auto;
+background: #9575CD;
+color: floralwhite;
+}
+.carousel{
+background: #512DA8;
+}
+.carousel-item{
+	height: 250px;
+}
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 250px;
+}
+.paragraph{
+padding-bottom: 20px ;
+
+
+}
+.address{
+font-size: 80%;
+margin: 0px;
+color:#0f0f0f;
+
+}
+#carouselButton{
+right: 0px;
+position: absolute;
+bottom: 0px;
+
+}
+
+
