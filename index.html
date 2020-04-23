@@ -18,15 +18,17 @@
     
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script href="node_modules/jquery/dist/jquery.min.js"></script>
+<script href=""></script>
+
+
 <script>
 $(function(){
     $('a[href*=\\#]:not([href=\\#])').on('click', function(){
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
         if (target.length) {
-        $('html,body').animate ({
+        $('html,body').animate({
             scrollTop: target.offset().top
         }, 1000);
             return false;
