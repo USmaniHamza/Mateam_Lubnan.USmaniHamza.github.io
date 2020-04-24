@@ -15,7 +15,7 @@
 
 .jumbotron {
   margin: 0px auto;
-  padding: 70px 30px;
+  padding: 100px 30px;
   background: #9575CD;
   color: floralwhite; }
 
@@ -47,7 +47,32 @@
       left: 0;
       min-height: 300px; }
 
+.modal .modal-content .modal-header {
+  background-color: #512DA8; }
+  .modal .modal-content .modal-header .modal-title {
+    color: floralwhite; }
+  .modal .modal-content .modal-header .badge-default {
+    color: floralwhite; }
+  .modal .modal-content .modal-header #cross {
+    color: floralwhite; }
+
+.modal .modal-content .modal-body {
+  background-color: #D1C4E9; }
+  .modal .modal-content .modal-body #CancelButton {
+    color: floralwhite; }
+
 #carouselButton {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+#LoginBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: floralwhite;
+  text-decoration: underline;
+  cursor: pointer; }
