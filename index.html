@@ -11,55 +11,44 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/min.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
-    
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- endbuild -->
+
+
+<!-- build:js js/main.js -->    
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script href="node_modules/jquery/dist/jquery.min.js"></script>
-<script href=""></script>
+<script href="js/scripts.js"></script> <!-- click to scroll-->
+<script href="js/scripts.js"></script> <!-- modal triggers-->
+<!--end build-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#mycarousel').carousel({ interval:2000});//2000ms or 2seconds so we are making it a bit faster for the sliding action to take place
+    $('#carouselButton').click(function(){
+       //over here we write what we want to do 
+       if ($('#carouselButton').children('span').hasClass('fa-pause')) {
+              $('#mycarousel').carousel('pause');   //activity paused
+              $('#carouselButton').children('span').removeClass('fa-pause');
+              $('#carouselButton').children('span').addClass('fa-play');  //icons changed
+          }
+       else if ($('#carouselButton').children('span').hasClass('fa-play')) {
+              $('#mycarousel').carousel('cycle'); //activity continued
+              $('#carouselButton').children('span').removeClass('fa-play');
+              $('#carouselButton').children('span').addClass('fa-pause');  //icons changed
+          }
 
-
-<script>
-$(function(){
-    $('a[href*=\\#]:not([href=\\#])').on('click', function(){
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
-        if (target.length) {
-        $('html,body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-            return false;
-        }
-    });
+           // #mycarousel ke tag dise jate pura process tai eii function er kotha mane
+            }); //for the pause button if a click action is done by the user, then execute this particular function
+ 
 
 });
+
 </script>
-
-
-
-<script>
-    $(document).ready(function(){
-      $("#LoginBtn").click(function(){
-        $("#loginModal").modal('show');
-      });
-    });
-</script>
-
-
-
-<script>
-    $(document).ready(function(){
-      $("#ReserveBtn").click(function(){
-        $("#ReserveModal").modal('show');
-      });
-    });
-</script>
-
-
-    <title>Ristorante Con Fusion</title>
+<title>Ristorante Con Fusion</title>
 </head>
 
 <body>
@@ -459,20 +448,13 @@ $(function(){
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->  
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-$('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-
-
-    <script src="js/scripts.js">
-       //there was code here that has been transfered to the scripts.js
-    </script>
-    
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js">//there was code here that has been transfered to the scripts.js</script> <!-- the big code at the first-->
+    <!--end build-->
 
 </body>
 

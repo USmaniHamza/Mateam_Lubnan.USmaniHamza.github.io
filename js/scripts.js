@@ -18,3 +18,38 @@ $(document).ready(function(){
  
 
 });
+//tooltip
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+            });
+
+//button to scroll
+$(function(){
+    $('a[href*=\\#]:not([href=\\#])').on('click', function(){
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+        if (target.length) {
+        $('html,body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+            return false;
+        }
+    });
+
+});
+
+
+
+
+//login reserve a table modals triggered using JS
+$(document).ready(function(){
+    $("#LoginBtn").click(function(){
+      $("#loginModal").modal('show');
+    });
+  });
+
+  $(document).ready(function(){
+    $("#ReserveBtn").click(function(){
+      $("#ReserveModal").modal('show');
+    });
+  });
