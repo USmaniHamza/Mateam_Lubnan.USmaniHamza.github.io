@@ -1,71 +1,85 @@
-.jumbotron{
-padding-top:  100px ;
-padding-right:30px;
-padding-bottom:70px;
-padding-left:  30px;
-margin:0px auto;
-background: #9575CD;
-color: floralwhite;
+.jumbotron {
+	padding-top: 100px;
+	padding-right: 30px;
+	padding-bottom: 70px;
+	padding-left: 30px;
+	margin: 0px auto;
+	background: #EBD489;
+	color: floralwhite;
 }
-.body{
-	padding:50px 0px 0px 0px;
+
+.body {
+	padding: 50px 0px 0px 0px;
 	z-index: 0;
 }
-.navbar-dark{
-	background-color: #4B0082;
+
+.navbar-dark {
+	background-color: #648813;
 }
+
 .tab-content {
-border-left: 1px solid #ddd;
-border-right: 1px solid #ddd;
-border-bottom: 1px solid #ddd;
-padding: 20px;
-}
-.History{
-padding: 50px 0px 50px 0px;
-margin: 0px ;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 20px;
 }
 
-.Corporate{
-padding-top: 90px;
-padding-left:  30px;
-margin: 0px ;
+.History {
+	padding: 50px 0px 50px 0px;
+	margin: 0px;
 }
-.Body{
-padding-left: 110px;
-margin: 0px ;
-}
-.footer{
-background-color: #D1C4E8;
-margin:0px auto;
-padding:20px 0px 20px 0px;
 
-
+.Corporate {
+	padding-top: 90px;
+	padding-left: 30px;
+	margin: 0px;
 }
-.Coporateleader{
-margin:0px auto;
-padding-top: 20px;
+
+.Body {
+	padding-left: 110px;
+	margin: 0px;
+}
+
+.footer {
+	background: #EBD489;
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+
 
 }
 
-
-
-
-.row-content{
-margin:0px auto;
-padding:20px 0px 50px 0px;
-border-bottom: 1px ridge;
-min-height: 400px;
+.Coporateleader {
+	margin: 0px auto;
+	padding-top: 20px;
 
 }
-.OurHistory{
-margin:0px auto;
-padding: 50px 0px 50px 0px;
-border-bottom: 1px ridge;
-min-height: 400px;
+
+
+
+
+.row-content {
+	margin: 0px auto;
+	padding: 20px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px;
 
 }
-.row-header{
-margin:0px auto;
-padding: 0px auto;
 
+.OurHistory {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px;
+
+}
+
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+
+}
+
+.Mateam {
+	padding-top: 50px;
+	color: #a63229;
 }
